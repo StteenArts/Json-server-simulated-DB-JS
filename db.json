@@ -1,0 +1,104 @@
+{
+    "cars": [{
+        "id": 1,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2020,
+        "color": "Blue",
+        "wheels_id": 1
+    },
+    {
+        "id": 2,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2019,
+        "color": "Red",
+        "wheels_id": 2
+    },
+    {
+        "id": 3,
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 2021,
+        "color": "Black",
+        "wheels_id": 3
+    },
+    {
+        "id": 4,
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "year": 2018,
+        "color": "White",
+        "wheels_id":  1
+        
+    },
+    {
+        "id": 5,
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2022,
+        "color": "Gray",
+        "wheels_id": 2
+    },
+    {
+        "id": 6,
+        "make": "Hyundai",
+        "model": "Elantra",
+        "year": 2020,
+        "color": "Silver",
+        "wheels_id": 3
+    },
+    {
+        "id": 7,
+        "make": "Kia",
+        "model": "Optima",
+        "year": 2019,
+        "color": "Green",
+        "wheels_id": 2
+    },
+    {
+        "id": 8,
+        "make": "Volkswagen",
+        "model": "Passat",
+        "year": 2021,
+        "color": "Blue",
+        "wheels_id": 1
+    },
+    {
+        "id": 9,
+        "make": "Subaru",
+        "model": "Impreza",
+        "year": 2018,
+        "color": "Red",
+        "wheels_id": 3
+    },
+    {
+        "id": 10,
+        "make": "Mazda",
+        "model": "Mazda6",
+        "year": 2022,
+        "color": "Black",
+        "wheels_id": 2
+    }],
+    "wheels":[{
+        "id": 1,
+        "count": 4,
+        "type": "Michelin",
+        "size": 17,
+        "temperature_rating": "All-Season"
+    },
+    {
+        "id": 2,
+        "count": 4,
+        "type": "Pirelli",
+        "size": 16,
+        "temperature_rating": "Winter"
+    },
+    {
+        "id": 3,
+        "count": 4,
+        "type": "Dunglon",
+        "size": 18,
+        "temperature_rating": "Summer"
+    }]
+}

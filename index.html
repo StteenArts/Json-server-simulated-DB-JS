@@ -5,14 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" />
     <title>Json server</title>
 </head>
 <body>
-    <section >
+    <header class="p-4 header-menu mb-5">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-start ">
+                <a href="https://www.bmw.com.co/" target="_blank">
+                <image src="https://www.pngplay.com/wp-content/uploads/12/Cars-Logo-Brands-PNG-Pic-Clip-Art-Background.png" class="img-content btn"/>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-3 d-flex align-items-center">
+                <input placeholder="search" class="form-control" id="searchCar"/>
+            </div>
+            <div class="col-md-3 col-sm-3 d-flex align-items-center">
+                <a class="btn me-2 text-white">Home</a>
+                <a class="btn me-2 text-white">Dashboard</a>
+                <a class="btn text-white">Helps</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
         <div class="row justify-content-center" id="content">
 
         </div>
-
     </section>
 </body>
 </html>

@@ -6,7 +6,7 @@ async function getWheels(){
     const wheels = await response.json();
     return wheels
   } catch (error) {
-    console.error("Fetch Errors wheels:", error);
+    console.error("Fetch Errors Get wheels:", error);
   }
 }
 
@@ -20,16 +20,34 @@ async function getCars(){
     }
 }
 
+// Function for looking for car's name
+async function lookingCars(name) {
+    const cars = await getCars();
+
+    return cars.filter(car =>
+        car.make.toLowerCase().includes(name.toLowerCase())
+    );
+}
+
+document.addEventListener('keypress',async ()=>{
+    const searchCar = document.getElementById('searchCar').value
+    if(searchCar){
+        const car = await lookingCars(searchCar);
+        content.innerHTML = ``;
+        console.log(car)
+    }
+});
+
 
 async function render(){
     const cars = await getCars();
     const wheels = await getWheels();
 
-    console.log(wheels)
+/*     console.log(wheels) */
 
     cars.forEach(car => {
         content.innerHTML += `
-            <div class="col-md-2 card text-center me-3 ms-5 mt-5 p-5">
+            <div class="col-md-4 col-sm-12 col-lg-3 card text-center me-3 ms-5 mt-5 mb-5 p-5">
                 <h1 class="mb-5 text-primary">${car.make}</h1>
                 <div class="">
                     <h4>Model: <b> ${car.model}</b></h4>
@@ -43,7 +61,3 @@ async function render(){
 }
 
 render()
-
-
-
-

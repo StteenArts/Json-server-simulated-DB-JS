@@ -1,0 +1,9 @@
+.img-content{
+    padding: 2%;
+    width: 8vh;
+}
+
+.header-menu{
+    background-color: rgba(0, 0, 0, 0.782);
+    border-bottom: 5px solid rgb(38, 114, 115);
+}
